@@ -1,0 +1,23 @@
+
+<section class="carousel-container">
+
+    <div class="current-image-container"><img src="images/<%= imagefolder + '/' + images[1] %>" class="large-image current-image"> </div>
+
+  <span class="arrow arrow-left">  < </span>
+  <ul class="next-list">
+
+        <% for (var i = 2; i < images.length; i++) { %>
+            <li><img src="images/<%= imagefolder + '/' + images[i] %>" alt="" class="image-of-list current-image-list"></li>
+
+        <% } %>
+
+    <% for (var i = 2; i < images.length; i++) { %>
+        <li><img src="images/<%= imagefolder + '/' + images[i] %>" alt="" class="image-of-list"></li>
+
+    <% } %>
+
+  </ul>
+  <span class="arrow arrow-right"> > </span>
+</section>
+
+<script src="javascripts/index.js"></script>

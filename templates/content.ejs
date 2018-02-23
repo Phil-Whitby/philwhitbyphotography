@@ -1,0 +1,13 @@
+
+<div class="container text-center">
+ <a id= "anchor"><h3>Wedding galleries</h3></a><br>
+ <div class="row">
+
+   <% for (var i = 0; i < galleries.length; i++) { %>
+     <div class="col-sm-4">
+       <a href='<%= galleries[i].link %>'><img src="<%= galleries[i].image %>" class="img-responsive" style="width:100%" alt="Image">
+       <p><%= galleries[i].wedding %></p></a>
+     </div>
+   <% } %>
+ </div>
+</div><br>
